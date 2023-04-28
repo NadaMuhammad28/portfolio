@@ -44,8 +44,8 @@ body {
 }
 
 h1 {
-  font-family: "TheHistoriaDemo", sans-serif !important;
-  color: var(--txt-color-secondary-1);
+  /* font-family: "TheHistoriaDemo", sans-serif !important; */
+  /* color: var(--txt-color-secondary-1); */
 }
 
 button {

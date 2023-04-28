@@ -1,0 +1,123 @@
+.circles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.circle {
+  z-index: -10;
+  overflow: visible;
+  opacity: 0.2;
+}
+
+.c-1 {
+  top: 4rem;
+  left: 2rem;
+  position: absolute;
+}
+
+.circle-1 {
+  will-change: transform;
+  animation: circle-1-keyframes 13s ease-in-out infinite alternate;
+}
+
+.blur-\[128px\] {
+  --tw-blur: blur(128px);
+}
+.blur,
+.blur-\[128px\] {
+  filter: var(--tw-blur);
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.w-\[700px\] {
+  width: 700px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+.-z-10 {
+  z-index: -10;
+}
+
+.c-2 {
+  top: 8rem;
+  left: 2.5rem;
+  position: absolute;
+}
+.c-3 {
+  top: 12rem;
+  left: 3rem;
+  position: absolute;
+}
+.circle-2 {
+  -webkit-animation: circle-2-keyframes 8s ease-in-out infinite alternate;
+  animation: circle-2-keyframes 8s ease-in-out infinite alternate;
+}
+.circle-1,
+.circle-2 {
+  will-change: transform;
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+.bg-green-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
+.circle-3 {
+  will-change: transform;
+  -webkit-animation: circle-3-keyframes 18s ease-in-out infinite alternate;
+  animation: circle-3-keyframes 18s ease-in-out infinite alternate;
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.w-\[500px\] {
+  width: 500px;
+}
+.h-\[600px\] {
+  height: 600px;
+}
+.-z-10 {
+  z-index: -10;
+}
+@keyframes circle-1-keyframes {
+  100% {
+    transform: translateX(200px) translateY(50px);
+  }
+}
+
+@keyframes circle-2-keyframes {
+  100% {
+    transform: translateX(300px) translateY(-25px);
+  }
+}
+
+@keyframes circle-3-keyframes {
+  100% {
+    transform: translateX(250px) translateY(25px);
+  }
+}
