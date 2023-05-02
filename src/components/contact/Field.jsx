@@ -53,8 +53,9 @@ const Text = styled(TextField)`
   .css-1rcvvn7-MuiInputBase-root-MuiInput-root:hover:before {
     border-bottom: 3px solid #cf23cf !important;
   }
-  .css-l4u8b9-MuiInputBase-root-MuiInput-root:before,
-  .css-1rcvvn7-MuiInputBase-root-MuiInput-root:before {
+  .css-l4u8b9-MuiInputBase-root-MuiInput-root::before,
+  .css-1rcvvn7-MuiInputBase-root-MuiInput-root::before,
+  input::before {
     border-bottom: 3px solid #d1d5db !important;
   }
 
