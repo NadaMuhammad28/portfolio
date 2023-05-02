@@ -13,7 +13,7 @@ const BottomNav = styled("nav")({
   position: "fixed",
   backgroundColor: "hsla(0, 0%, 2%, 0.5)",
   left: 0,
-  bottom: 0,
+  // bottom: 0,
   width: "100%",
   display: "flex",
   justifyContent: "space-around",
@@ -24,11 +24,11 @@ const BottomNav = styled("nav")({
   backdropFilter: "blur(5px)",
   zIndex: 300,
   padding: ".8rem 1.5rem",
+  bottom: "1rem",
   "@media (min-width: 768px)": {
     // display: "none",
     margin: "auto",
     width: "80%",
-    bottom: "1rem",
     right: 0,
     // background: "red",
   },
@@ -73,19 +73,19 @@ const BottomNavigation = () => {
     <BottomNav>
       <BottomNavItem to="/">
         <IoHome />
-        <span> Home</span>
+        <span> {"< Home />"}</span>
       </BottomNavItem>
       <BottomNavItem to="/about">
         <BsExclamationCircle />
-        <span> About </span>
+        <span> {"< About />"} </span>
       </BottomNavItem>
       <BottomNavItem to="/projects">
         <BsBriefcaseFill />
-        <span> Projects </span>
+        <span> {"< Projects />"}</span>
       </BottomNavItem>
       <BottomNavItem to="lets-talk">
         <BsFillChatDotsFill />
-        <span> Contact </span>
+        <span> {"< Contact />"} </span>
       </BottomNavItem>
       {/* <BottomNavItem to="/profile">
         <FaUser />

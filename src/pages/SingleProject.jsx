@@ -26,7 +26,7 @@ export default function SinglePRoject() {
         title: data.title,
         images: data.images,
         description: data.description,
-        tags: data.tags,
+        tags: data.tags || data.tag,
       });
     } catch (e) {
       console.log(e);

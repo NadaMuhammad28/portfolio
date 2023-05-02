@@ -36,7 +36,7 @@
 
 .bg-red-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+  background-color: rgb(8, 7, 8);
 }
 .rounded-full {
   border-radius: 9999px;
@@ -76,7 +76,9 @@
 }
 .bg-green-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+  /* background-color: rgb(21 128 61); */
+  background-color:#9b56e8;
+
 }
 
 .circle-3 {
@@ -90,7 +92,9 @@
 }
 .bg-blue-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  /* background-color: rgb(29 78 216 / var(--tw-bg-opacity)); */
+  background-color: rgb(16, 21, 35);
+
 }
 .rounded-full {
   border-radius: 9999px;

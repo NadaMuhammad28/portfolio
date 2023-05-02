@@ -5,23 +5,6 @@ import TitleSecondary from "../subComponents/TitleSecondary";
 import Hero from "./subComponents/hero";
 import Tags from "./subComponents/Tags";
 export default function ProjectDetails({ data }) {
-  const tags = [
-    "html",
-    "Css",
-    "typescript",
-    "javascript",
-    "html",
-    "Css",
-    "typescript",
-    "javascript",
-    "html",
-    "Css",
-    "typescript",
-    "javascript",
-    "html",
-    "Css",
-    "typescript",
-  ];
   return (
     <Wrapper className="">
       <Hero name={data.title} />
@@ -44,19 +27,26 @@ export default function ProjectDetails({ data }) {
 }
 const Wrapper = styled("aside")`
   padding: 2rem;
-  min-height: 100vh;
-  // overflow-y: scroll;
+  height: 100vh;
+  overflow-y: scroll;
   position: sticky;
   right: 0;
+  z-index: 1;
   top: 0;
   .content {
     padding: 3rem 0;
     gap: 4rem;
   }
+  body::-webkit-scrollbar {
+    width: 0.5em;
+  }
 
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+  }
   footer {
-    padding: 3rem 0;
-
+    margin: 5rem 0;
+    // padding: 3rem 0;
     gap: 3rem;
   }
   footer a {

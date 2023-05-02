@@ -5,11 +5,11 @@ import Skills from "../components/about/skills";
 const About = () => {
   return (
     <Wrapper className="section">
-      <Grid2 container spacing={3}>
-        <Grid2 item="true" xs={12} lg={6} className="about-content">
+      <Grid2 container spacing={4}>
+        <Grid2 item="true" xs={12} className="about-content">
           <AboutContent />
         </Grid2>
-        <Grid2 item="true" xs={12} lg={6} className="skills">
+        <Grid2 item="true" xs={12} className="skills">
           <Skills />
         </Grid2>
       </Grid2>

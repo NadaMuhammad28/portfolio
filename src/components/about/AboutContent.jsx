@@ -1,17 +1,33 @@
 import { Typography } from "@mui/material";
-import { styled } from "@mui/system";
+import { styled, typography } from "@mui/system";
 
 const AboutContent = () => {
   return (
     <Wrapper>
       <Typography variant="h2"> About ME</Typography>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
-        asperiores tempora debitis accusantium laboriosam voluptates doloribus
-        tenetur molestias? Modi voluptatibus sit libero laboriosam nam sed
-        pariatur saepe minima quia deserunt illo, architecto repudiandae
-        nesciunt ratione. Illo enim autem nesciunt laborum?
-      </p>
+
+      <article>
+        <Typography variant="body1">
+          I'm a software developer based in Cairo, Egypt. I recently graduated
+          with a bachelor's degree in computer engineering. I'm passionate about
+          web development. I've gained a solid understanding of web development
+          concepts, and have dedicated a lot of time to applying these concepts
+          to real-world scenarios and applications.
+        </Typography>
+
+        <Typography variant="body1">
+          I am constantly seeking to improve my coding skills and stay
+          up-to-date with the latest technologies and trends. I love to
+          experiment with new tools and frameworks, and enjoy collaborating with
+          other developers to solve complex problems and build innovative
+          solutions.
+        </Typography>
+        <Typography variant="body1">
+          I'm currently looking for opportunities where I can expand my
+          knowledge and skills, and contribute to meaningful projects that make
+          a difference in people's lives.
+        </Typography>
+      </article>
     </Wrapper>
   );
 };
@@ -20,16 +36,22 @@ const Wrapper = styled("section")`
   display: flex;
   flex-direction: column;
   align-items: center;
-  img {
-    width: 3rem;
-    object-fit: cover;
-    vertical-align: middle;
-    height: 100%;
-  }
 
-  @media (max-width: 600px) {
-    .tech-name {
-      display: none;
+  article {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    // text-align: center;
+    word-wrap: break-word;
+    // text-decoration: justify;
+    line-height: 1.8;
+  }
+  @media (min-width: 650px) {
+    article {
+      padding: 2rem 4rem;
     }
   }
 `;

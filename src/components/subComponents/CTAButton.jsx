@@ -1,10 +1,11 @@
 import { Button, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import React from "react";
+import { useGlobalContext } from "../../context/GlobalContext";
 
-export default function CTAButton({ text }) {
+export default function CTAButton({ text, disabled }) {
   return (
-    <Wrapper type="submit" variant="contained">
+    <Wrapper type="submit" variant="contained" disabled={disabled}>
       {text}
     </Wrapper>
   );
@@ -25,5 +26,13 @@ const Wrapper = styled(Button)`
 {background: #cf23cf;
 
   box-shadow: 0px 0px 10px #9b56e8;}
+}
+
+.Mui-disabled{
+  color:  #988e9f !important;
+  cursor: not-allowed !important;
+  background: rgba(207, 35, 207, .5) !important;
+
+  box-shadow: 0px 0px 10px #9b56e8 !important;
 }
 `;

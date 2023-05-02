@@ -1,16 +1,15 @@
-import { Suspense, useEffect, useState } from "react";
-
+import { lazy } from "react";
+import ProjectList from "../components/project/ProjectsList"
 import Lighting from "../components/shared/Lighting";
-import ProjectsList from "../components/project/ProjectsList";
 import "../components/project/card.css";
+import TitleSecondary from "../components/subComponents/TitleSecondary";
+// const ProjectList = lazy(() => import("../components/project/ProjectsList"));
 const Projects = () => {
   return (
-    <main className="main relative d-flex">
-      <Suspense fallback={<h2>loaaaaaaaaaaa</h2>}>
-        <ProjectsList />
-      </Suspense>
-
-      <Lighting />
+    <main className="main relative d-flex-col">
+      <TitleSecondary title="projects"/>
+      <ProjectList />
+      {/* <Lighting /> */}
     </main>
   );
 };

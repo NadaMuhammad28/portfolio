@@ -1,77 +1,94 @@
 import { Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
-import { socialLinks } from "../../utils/constants";
-import StarParticles from "./StarParticles";
-
+import SocialLinks from "./SocialLinks";
 const Hero = () => {
   return (
-    <Wrapper>
-      <StarParticles />
+    <section className="section hero-content">
+      <Title variant="h1">Nada Omran</Title>
 
-      <section className="section hero-content">
-        <Title variant="h1">Nada Omran</Title>
-
-        <Typography variant="subtitle2">
-          Software Engineer • FrontEnd Developer
-        </Typography>
-
-        {/* <div className="links-container d-flex">
-          {socialLinks.map((link) => {
-            const Icon = link.icon;
-            return (
-              <a className="link" href={link.url} key={link.id}>
-                <Icon />
-              </a>
-            );
-          })}
-        </div>
-        <Link to="projects" className="btn">
+      <Typography variant="subtitle1">
+        Software Engineer <span className="dot">•</span> Frontend Developer
+      </Typography>
+      <SocialLinks />
+      <CtaLink>
+        <div className="bg"> </div>
+        <a href="mailto:nadamuhammad28@gmail.com" target="_blank">
           Hire me
-        </Link> */}
-      </section>
-    </Wrapper>
+        </a>
+      </CtaLink>
+    </section>
   );
 };
 
-const Wrapper = styled("section")`
-  width: 100%;
-  height: 100vh;
-  color: #fff;
-  // background-color: var(--hero-bg);
-  .hero-content {
-    // gap: 1rem;
-    flex-direction: column;
-  }
-  .links-container {
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-  .link {
-    width: 2rem;
-    background: #fff;
-    height: 2rem;
-    border-radius: 50%;
-    transition: all 0.4s ease-in-out ;
-  }
-  .link:hover{
-    -webkit-box-shadow: 0px 0px 15px #fff;
-    box-shadow: 0px 0px 15px #fff;
-}
-  }
-  .link svg {
-    font-size:
-    vertical-align: middle;
-    transform: translate(50%, 50%);
-  }
-`;
-
 const Title = styled(Typography)`
-  background: linear-gradient(to right, #f54996, #cf23cf, #9b56e8);
+  background: linear-gradient(to right, rgb(222 29 141), #cf23cf, #9b56e8);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-weight: 500;
-  // color: #fff;
+  font-weight: 700;
+  color: #fff;
+  & ::selection {
+    background-color: #fff !important;
+  }
+`;
+
+const CtaLink = styled("div")`
+  margin-top: 2rem;
+
+  z-index: 3;
+  --tw-gradient-from: #de1d8d;
+
+  position: relative;
+  a {
+    text-transform: uppercase;
+    fontsize: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+  .bg {
+    height: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 108%;
+    z-index: -1;
+    box-shadow: 10px 2px 15px 5px rgba(222, 29, 141, 0.5),
+      -12px 2px 25px 6px rgba(207, 35, 207, 0.3),
+      0 2px 30px 10px rgba(155, 86, 232, 0.2);
+    // transform: translate(50%, 50%);
+    position: absolute;
+    background: line;
+    border-radius: 20px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+    transition: all ease-in-out 0.5s;
+    animation-name: bounce;
+  }
+  &:hover .bg {
+    box-shadow: 10px 2px 15px 8px rgba(222, 29, 141, 0.5),
+      -12px 2px 25px 10px rgba(207, 35, 207, 0.3),
+      0 2px 30px 12px rgba(155, 86, 232, 0.2);
+  }
+  @keyframes bounce {
+    0% {
+      top: 50%;
+      // transform: translateY(0);
+    }
+    30% {
+      top: 55%;
+    }
+    60% {
+      top: 60%;
+    }
+    80% {
+      top: 55%;
+    }
+    100% {
+      top: 50%;
+    }
+  }
 `;
 export default Hero;

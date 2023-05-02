@@ -1,25 +1,21 @@
-import {
-  AiOutlineGithub,
-  AiOutlineFilePdf,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { FaLinkedinIn, FaGithub, FaRegFilePdf } from "react-icons/fa";
 export const socialLinks = [
   {
     id: 1,
-    nsme: "github",
-    icon: AiOutlineGithub,
+    name: "Github",
+    icon: FaGithub,
     url: "https://github.com/NadaMuhammad28",
   },
   {
     id: 2,
-    nsme: "linkedin",
-    icon: AiOutlineLinkedin,
+    name: "Linkedin",
+    icon: FaLinkedinIn,
     url: "https://www.linkedin.com/in/nada-omran-5536251b8/",
   },
   {
     id: 3,
-    nsme: "resume",
-    icon: AiOutlineFilePdf,
+    name: "Resume",
+    icon: FaRegFilePdf,
     url: "https://drive.google.com/file/d/1YsKX-jzFSTePlAFXYjQHuWbXAvA8091d/view?usp=share_link",
   },
 ];
@@ -68,7 +64,7 @@ export const skills = [
   {
     id: 9,
     title: "NextJS",
-    src: "/next.afac9015.svg",
+    src: "/nextjs.svg",
   },
   {
     id: 10,
