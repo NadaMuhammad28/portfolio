@@ -44,7 +44,7 @@ a {
   text-decoration: none;
 }
 .some-class::before {
-  border-bottom: 3px solid #d1d5db !important;
+  border-bottom: 3px solid #d1d5db;
   color: #06d79c;
 }
 h2,
