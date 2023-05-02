@@ -13,7 +13,6 @@ const Skills = () => {
               <div className="skill-container">
                 <img src={itm.src} alt={itm.title} />
                 <Typography variant="caption" className="tech-name">
-                  {" "}
                   {itm.title}
                 </Typography>
               </div>

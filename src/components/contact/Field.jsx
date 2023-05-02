@@ -47,7 +47,7 @@ const Text = styled(TextField)`
   }
   .css-l4u8b9-MuiInputBase-root-MuiInput-root:after,
   .css-1rcvvn7-MuiInputBase-root-MuiInput-root:after {
-    border-bottom: 3px solid #f54996;
+    border-bottom: 3px solid #f54996 !important;
   }
   .css-l4u8b9-MuiInputBase-root-MuiInput-root:hover:before,
   .css-1rcvvn7-MuiInputBase-root-MuiInput-root:hover:before {
@@ -55,7 +55,7 @@ const Text = styled(TextField)`
   }
   .css-l4u8b9-MuiInputBase-root-MuiInput-root:before,
   .css-1rcvvn7-MuiInputBase-root-MuiInput-root:before {
-    border-bottom: 3px solid #d1d5db;
+    border-bottom: 3px solid #d1d5db !important;
   }
 
   input,
