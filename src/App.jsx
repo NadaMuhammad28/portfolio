@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import NavBar from "./components/shared/NavBar";
-
+import Loader from "./components/shared/Loader";
 import { Suspense } from "react";
 import {
   createTheme,
@@ -28,8 +28,8 @@ function App() {
     <GlobalContext>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
-          <Suspense fallback={<h1>loading..</h1>}>
-            <NavBar />
+          <NavBar />
+          <Suspense fallback={<Loader />}>
             <Routes>
               <Route path="" element={<Home />} />
               <Route path="/about" element={<About />} />
