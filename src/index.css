@@ -43,7 +43,10 @@ span {
 a {
   text-decoration: none;
 }
-
+.some-class::before {
+  border-bottom: 3px solid #d1d5db !important;
+  color: #06d79c;
+}
 h2,
 h1,
 h3,
