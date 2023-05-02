@@ -44,8 +44,14 @@ a {
   text-decoration: none;
 }
 .some-class::before {
-  border-bottom: 3px solid #d1d5db;
+  border-bottom: 3px solid #d1d5db !important;
   color: #06d79c;
+}
+.Mui-error + .some-class::before {
+  border-bottom: 3px solid #d32f2f !important;
+}
+.some-class::after {
+  border-bottom: 3px solid #cf23cf !important;
 }
 h2,
 h1,

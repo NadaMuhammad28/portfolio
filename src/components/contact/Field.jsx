@@ -48,29 +48,15 @@ const Text = styled(TextField)`
     color: #d1d5db !important;
     z-index: 1;
   }
-  .css-l4u8b9-MuiInputBase-root-MuiInput-root:after,
-  .css-1rcvvn7-MuiInputBase-root-MuiInput-root:after {
-    border-bottom: 3px solid #f54996 !important;
-  }
-  .css-l4u8b9-MuiInputBase-root-MuiInput-root:hover:before,
-  .css-1rcvvn7-MuiInputBase-root-MuiInput-root:hover:before {
-    border-bottom: 3px solid #cf23cf !important;
-  }
-  // .css-l4u8b9-MuiInputBase-root-MuiInput-root::before,
-  // .css-1rcvvn7-MuiInputBase-root-MuiInput-root::before,
-  // input::before {
-  //   border-bottom: 3px solid #d1d5db !important;
-  // }
+
 
   input,
   textarea {
     color: #f3f3f3;
     padding: 0.2rem 0;
-  }
-  .Mui-error::before {
-    border-bottom: 3px solid red;
-  }
+
   .MuiFormHelperText-root {
-    // color:white;
+    color:#d32f2f ;
   }
+ 
 `;
