@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import CTAButton from "../subComponents/CTAButton";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Field from "./Field";
 import inputs from "../../utils/Cotactform";
 import { useGlobalContext } from "../../context/GlobalContext";
@@ -13,10 +13,10 @@ export default function ContactForm() {
   const sendEmail = async () => {
     try {
       await emailjs.sendForm(
-        "service_h3gpw6w",
-        "template_y6aqqfr",
+        VITE_REACT_APP_EMAIL_SERVICE_ID,
+        VITE_REACT_APP_EMAIL_TEMPLATE_ID,
         form.current,
-        "urDqjkfYH-loLwCSf"
+        VITE_REACT_APP_EMAIL_PUBLIC_KEY
       );
     } catch (e) {
       console.log(error.text);
@@ -30,7 +30,7 @@ export default function ContactForm() {
   };
 
   return (
-    <>
+    <main style={{ overflow: "hidden" }}>
       <form onSubmit={handleSubmit} ref={form} autoComplete="off">
         <Grid2 container spacing={4}>
           {inputs.map((el) => {
@@ -69,6 +69,6 @@ export default function ContactForm() {
         </Grid2>
       </form>
       <Modal />
-    </>
+    </main>
   );
 }
