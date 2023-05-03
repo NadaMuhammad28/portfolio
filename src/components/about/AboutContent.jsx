@@ -1,10 +1,12 @@
 import { Typography } from "@mui/material";
 import { styled, typography } from "@mui/system";
+import TitleSecondary from "../subComponents/TitleSecondary";
 
 const AboutContent = () => {
   return (
     <Wrapper>
-      <Typography variant="h2"> About ME</Typography>
+      {/* <Typography variant="h2"> About ME</Typography> */}
+      <TitleSecondary title="ABOUT ME" variant="h3" />
 
       <article>
         <Typography variant="body1">
@@ -36,7 +38,9 @@ const Wrapper = styled("section")`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  p {
+    line-height: 2.5;
+  }
   article {
     display: flex;
     gap: 2rem;

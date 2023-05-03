@@ -73,7 +73,7 @@ export const skills = [
   },
   {
     id: 11,
-    title: "Git / GitHub ",
+    title: "Git",
     src: "/git.273a5c87.svg",
   },
   // {

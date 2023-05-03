@@ -1,8 +1,8 @@
 import { Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
-export default function TitleSecondary({ title }) {
-  return <Wrapper variant="h2">{title}</Wrapper>;
+export default function TitleSecondary({ title, variant }) {
+  return <Wrapper variant={variant ? variant : "h2"}>{title}</Wrapper>;
 }
 
 const Wrapper = styled(Typography)`
