@@ -18,7 +18,6 @@ export default function Field({ props }) {
     if (isValid) {
       setErrMsg("");
       setFieldState({ ...fieldState, [e.target.name]: true });
-      // setDisabled(false)
     }
   };
 

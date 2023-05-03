@@ -25,7 +25,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // sendEmail()
+    sendEmail();
     handleModal();
   };
 

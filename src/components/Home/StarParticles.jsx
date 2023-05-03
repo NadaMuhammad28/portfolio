@@ -14,17 +14,12 @@ const Stars = () => {
     setIsPEnding(false);
   }, []);
   console.log(ispending);
-  // if (ispending) return <Loader />;
   return (
     <Particles
       id="tsparticles"
       style={{ position: "absolute", top: 0 }}
       params={options}
       init={particlesInit}
-      // loaded={() => {
-      //   console.log("oo");
-      //   setIsPEnding(false);
-      // }}
       detectTouch={false}
     />
   );

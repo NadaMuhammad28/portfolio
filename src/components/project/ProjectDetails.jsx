@@ -9,7 +9,6 @@ export default function ProjectDetails({ data }) {
     <Wrapper className="">
       <Hero name={data.title} />
       <div className="d-flex-col content">
-        {/* <Typography variant="h2">{data.title}</Typography> */}
         <TitleSecondary title={data.title} />
         <Typography variant="body1">{data.description}</Typography>
       </div>

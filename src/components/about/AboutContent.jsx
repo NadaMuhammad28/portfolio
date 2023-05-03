@@ -5,7 +5,6 @@ import TitleSecondary from "../subComponents/TitleSecondary";
 const AboutContent = () => {
   return (
     <Wrapper>
-      {/* <Typography variant="h2"> About ME</Typography> */}
       <TitleSecondary title="ABOUT ME" variant="h3" />
 
       <article>

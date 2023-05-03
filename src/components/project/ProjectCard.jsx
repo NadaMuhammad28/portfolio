@@ -8,7 +8,6 @@ export default function ProjectCard({ data }) {
   return (
     <article className="p-card-wrapper">
       <div className="p-img-container">
-        {/* <img src="/download.png" /> */}
         <LazyImg alt={data.title} img={data.img} style="lazy-img" />
       </div>
       <div className="p-content">

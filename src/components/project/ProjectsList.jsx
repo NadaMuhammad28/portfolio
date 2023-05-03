@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useGlobalContext } from "../../context/GlobalContext";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 

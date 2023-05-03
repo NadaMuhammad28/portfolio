@@ -1,11 +1,11 @@
 import { Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
+import Titleh1 from "./Title";
 const Hero = () => {
   return (
     <section className="section hero-content">
-      <Title variant="h1">Nada Omran</Title>
+      <Titleh1 variant="h1" title="Nada Omran" />
 
       <Typography variant="subtitle1">
         Software Engineer <span className="dot">•</span> Frontend Developer
@@ -20,18 +20,6 @@ const Hero = () => {
     </section>
   );
 };
-
-const Title = styled(Typography)`
-  background: linear-gradient(to right, rgb(222 29 141), #cf23cf, #9b56e8);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
-  & ::selection {
-    background-color: #fff !important;
-  }
-`;
 
 const CtaLink = styled("div")`
   margin-top: 2rem;

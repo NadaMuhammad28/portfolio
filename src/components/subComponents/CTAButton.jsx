@@ -1,7 +1,6 @@
 import { Button, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import React from "react";
-import { useGlobalContext } from "../../context/GlobalContext";
 
 export default function CTAButton({ text, disabled }) {
   return (

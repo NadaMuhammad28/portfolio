@@ -7,7 +7,7 @@ export default function ContactTitle() {
     <>
       <TitleSecondary title="contact" />
       <Typography variant="subtitle1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nisi?{" "}
+        want to work together? Feel free to reach out
       </Typography>
     </>
   );
