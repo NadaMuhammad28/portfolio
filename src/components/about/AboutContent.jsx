@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { styled, typography } from "@mui/system";
+import { styled } from "@mui/system";
 import TitleSecondary from "../subComponents/TitleSecondary";
 
 const AboutContent = () => {

@@ -24,61 +24,66 @@ export const skills = [
   {
     id: 1,
     title: "HTML",
-    src: "/html.831b0a8a.svg",
+    src: "/logos/html.831b0a8a.svg",
   },
   {
     id: 2,
     title: "CSS",
-    src: "/css.9a2d55c8.svg",
+    src: "/logos/css.9a2d55c8.svg",
   },
   {
     id: 3,
     title: "Bootstrap",
-    src: "/bootstrap.a071d875.svg",
+    src: "/logos/bootstrap.a071d875.svg",
   },
   {
     id: 4,
     title: "Tailwind",
-    src: "/tailwind.87eec164.svg",
+    src: "/logos/tailwind.87eec164.svg",
   },
   {
     id: 5,
     title: "JavaScript",
-    src: "/javascript.7ae6c4c0.svg",
+    src: "/logos/javascript.7ae6c4c0.svg",
   },
   {
     id: 6,
     title: "ReactJS",
-    src: "/react.d0e9dc0b.svg",
+    src: "/logos/react.d0e9dc0b.svg",
   },
   {
     id: 7,
     title: "RTK",
-    src: "/redux.svg",
+    src: "/logos/redux.svg",
   },
   {
     id: 8,
     title: "TypeScript",
-    src: "/typescript.c4db509c.svg",
+    src: "/logos/typescript.c4db509c.svg",
   },
   {
     id: 9,
     title: "NextJS",
-    src: "/nextjs.svg",
+    src: "/logos/nextjs.svg",
   },
   {
     id: 10,
     title: "NodeJS",
-    src: "/node.ce6a695c.svg",
+    src: "/logos/node.ce6a695c.svg",
   },
   {
     id: 11,
     title: "Git",
-    src: "/git.273a5c87.svg",
+    src: "/logos/git.273a5c87.svg",
   },
-  // {
-  //   id: 12,
-  //   title: "NodeJS",
-  //   src: "/node.ce6a695c.svg",
-  // },
+  {
+    id: 12,
+    title: "MUI",
+    src: "/logos/mui.png",
+  },
+  {
+    id: 13,
+    title: "",
+    src: "/logos/styled.png",
+  },
 ];

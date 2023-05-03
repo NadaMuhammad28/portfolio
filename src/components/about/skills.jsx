@@ -22,7 +22,11 @@ const Skills = () => {
               >
                 <div className="skill-container">
                   <article>
-                    <img src={itm.src} alt={itm.title} />
+                    <img
+                      src={itm.src}
+                      alt={itm.title}
+                      style={{ width: itm.id == 13 ? "7rem" : "" }}
+                    />
                     <Typography variant="subtitle2" className="tech-name">
                       {itm.title}
                     </Typography>
