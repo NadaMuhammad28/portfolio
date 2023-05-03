@@ -11,14 +11,14 @@ import { styled } from "@mui/system";
 
 const BottomNav = styled("nav")({
   position: "fixed",
-  backgroundColor: "hsla(0, 0%, 2%, 0.5)",
+  backgroundColor: "hsla(0%, 10%, 20%, 0.2)",
   left: 0,
-  // bottom: 0,
   width: "100%",
   display: "flex",
+
   justifyContent: "space-around",
   alignItems: "center",
-  boxShadow: "0 -1px 3px rgba(0, 0, 0, 0.5)",
+  boxShadow: "0 1px 10px rgba(155, 86, 232, 0.1)",
   minHeight: "4rem",
   borderRadius: ".75rem",
   backdropFilter: "blur(5px)",
@@ -41,7 +41,7 @@ const BottomNavItem = styled(NavLink)({
   justifyContent: "center",
   textDecoration: "none",
   textAlign: "center",
-  color: "#555",
+  color: "#f3f3f3",
   gap: "0.7rem",
   transition: ".3s all ease-in-out",
 
@@ -55,6 +55,9 @@ const BottomNavItem = styled(NavLink)({
     Transform: "tranalateY(0)",
 
     transition: ".3s all ease-in-out",
+  },
+  "&.visited": {
+    color: "inherit",
   },
 
   "& svg": {
