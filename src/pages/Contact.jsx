@@ -12,6 +12,7 @@ const Contact = () => {
 };
 
 const Wrapper = styled("main")`
+  overflow: hidden;
   flex-direction: column;
   gap: 2rem;
 `;

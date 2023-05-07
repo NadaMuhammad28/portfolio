@@ -39,6 +39,8 @@ const Wrapper = styled("section")`
   align-items: center;
   p {
     line-height: 2.5;
+    // word-break: break-all;
+    hyphens: auto;
   }
   article {
     display: flex;

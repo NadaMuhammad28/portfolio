@@ -16,7 +16,7 @@ export const socialLinks = [
     id: 3,
     name: "Resume",
     icon: FaRegFilePdf,
-    url: "https://drive.google.com/file/d/1YsKX-jzFSTePlAFXYjQHuWbXAvA8091d/view?usp=share_link",
+    url: "https://drive.google.com/file/d/1Sb4CvyI9CG4VOcXz9Nj4Sk0rzP5byRP9/view?usp=share_link",
   },
 ];
 

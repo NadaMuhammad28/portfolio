@@ -11,7 +11,9 @@ export default function ProjectCard({ data }) {
         <LazyImg alt={data.title} img={data.img} style="lazy-img" />
       </div>
       <div className="p-content">
-        <Typography variant="h5">{data.title}</Typography>
+        <Typography variant="h4" className="h4">
+          {data.title}
+        </Typography>
         <div className="p-links-cntainer">
           {data.demo_url && (
             <span className="link-holder">

@@ -15,6 +15,7 @@ const Wrapper = styled(Button)`
   padding: 0.8rem 1.5rem;
   background: #cf23cf;
   color: #fff;
+  align-self:center;
   cursor:pointer;
 
   border-radius: 6px;

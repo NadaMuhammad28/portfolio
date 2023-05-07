@@ -3,14 +3,15 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useGlobalContext } from "../../context/GlobalContext";
 import { styled } from "@mui/system";
+import { useTheme } from "@mui/material/styles";
 
 const style = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "80%",
-  bgcolor: "hsla(0, 0%, 7%, 1)",
+  // width: "50%",
+  bgcolor: "#111",
   color: "#988e9f",
   border: "2px solid #000",
   borderRadius: 6, // Set the border radius of the modal
@@ -19,6 +20,7 @@ const style = {
 };
 
 export default function ContactModal() {
+  const theme = useTheme();
   const { isModalOpened, handleModal } = useGlobalContext();
 
   return (
@@ -28,13 +30,34 @@ export default function ContactModal() {
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
     >
-      <Box>
-        <Typography variant="h3" gutterBottom>
-          Email sent
-        </Typography>
-        <Typography variant="body1" sx={{ mt: 2 }}>
-          Thanks for contacting me. I will get in touch with you shortly! :)
-        </Typography>
+      <Box
+        sx={{
+          ...style,
+          [theme.breakpoints.up("xs")]: {
+            width: "80%",
+          },
+          [theme.breakpoints.up("sm")]: {
+            width: "50%",
+          },
+
+          [theme.breakpoints.up("lg")]: {
+            width: "40%",
+          },
+        }}
+      >
+        <div
+          className="d-flex-col"
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "2rem",
+          }}
+        >
+          <Typography variant="h3">Email sent</Typography>
+          <Typography variant="body1">
+            Thanks for contacting me. I will get in touch with you shortly!
+          </Typography>
+        </div>
       </Box>
     </ModalWrapper>
   );

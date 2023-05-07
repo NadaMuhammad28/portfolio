@@ -28,6 +28,16 @@ const Wrapper = styled("aside")`
   padding: 2rem;
   height: 100vh;
   overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.2em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #222 !important;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #111 !important;
+  }
   position: sticky;
   right: 0;
   z-index: 1;

@@ -30,9 +30,14 @@ export default function ContactForm() {
   };
 
   return (
-    <main style={{ overflow: "hidden" }}>
-      <form onSubmit={handleSubmit} ref={form} autoComplete="off">
-        <Grid2 container spacing={4}>
+    <>
+      <form
+        onSubmit={handleSubmit}
+        ref={form}
+        autoComplete="off"
+        // style={{ overflow: "hidden" }}
+      >
+        <Grid2 container spacing={3}>
           {inputs.map((el) => {
             return (
               <Grid2
@@ -50,9 +55,9 @@ export default function ContactForm() {
             item
             xs={12}
             alignSelf="center"
-            spacing={2}
             container
             justifyContent="center"
+            paddingY={4}
           >
             <CTAButton
               text="Send"
@@ -69,6 +74,6 @@ export default function ContactForm() {
         </Grid2>
       </form>
       <Modal />
-    </main>
+    </>
   );
 }
