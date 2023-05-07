@@ -8,7 +8,7 @@ import { useGlobalContext } from "../../context/GlobalContext";
 import Modal from "./Modal";
 
 export default function ContactForm() {
-  const { fieldState, handleModal } = useGlobalContext();
+  const { fieldState, handleModal, setFieldState } = useGlobalContext();
   const form = useRef();
   const sendEmail = async () => {
     try {
@@ -27,6 +27,12 @@ export default function ContactForm() {
     e.preventDefault();
     sendEmail();
     handleModal();
+    setFieldState({
+      name: false,
+      email: false,
+      subject: false,
+      message: false,
+    });
   };
 
   return (
