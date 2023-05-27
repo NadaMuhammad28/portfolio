@@ -41,7 +41,8 @@ body::-webkit-scrollbar-thumb {
   color: #fff; /* Replace with your desired color */
 }
 
-h3::selection {
+h1::selection,
+::selection {
   -webkit-text-fill-color: #fff;
 }
 a,
