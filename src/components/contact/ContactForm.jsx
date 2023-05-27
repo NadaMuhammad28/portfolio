@@ -25,7 +25,6 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
     sendEmail();
     handleModal();
     setFieldState({
@@ -34,6 +33,7 @@ export default function ContactForm() {
       subject: false,
       message: false,
     });
+    form.current.reset();
   };
 
   return (

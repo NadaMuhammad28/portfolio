@@ -36,7 +36,6 @@ export default function GlobalContextProvider({ children }) {
           title: data.title,
         };
       });
-      console.log(newData);
       dispatch({ type: "FETCH_PROJECTS", payload: newData });
     } catch (e) {
       console.log(e);

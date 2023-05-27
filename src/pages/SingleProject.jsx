@@ -36,7 +36,6 @@ export default function SinglePRoject() {
   useEffect(() => {
     fetchProject();
   }, []);
-  console.log(project);
   return (
     <main className="relative">
       <Suspense fallback={<p>xmmk</p>}>
