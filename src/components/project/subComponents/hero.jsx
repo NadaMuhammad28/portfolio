@@ -9,7 +9,7 @@ export default function Hero({ name }) {
         <span className="back-icon">
           <AiOutlineArrowLeft />
         </span>
-        <span>projects</span>
+        <span className="p-crumb-hover">projects</span>
         <span> / </span>
       </Link>
       <span>{name}</span>
@@ -32,6 +32,9 @@ const Wrapper = styled("header")`
     justify-content: center;
     color: #fff;
     background-color: var(--bg-secondary);
+  }
+  p-crumb-hover:hover a {
+    color: #fff !important;
   }
   a {
     align-items: center;
