@@ -40,6 +40,10 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--bg-secondary);
   color: #fff; /* Replace with your desired color */
 }
+
+h3::selection {
+  -webkit-text-fill-color: #fff;
+}
 a,
 span {
   color: var(--txt-color-secondary-2);
