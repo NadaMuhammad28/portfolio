@@ -19,6 +19,7 @@ const Wrapper = styled("main")`
   }
   .links-container {
     gap: 1rem;
+    z-index:100;
     margin-top: 2rem;
   }
   .link {
