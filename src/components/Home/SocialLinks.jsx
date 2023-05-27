@@ -7,16 +7,18 @@ export default function SocialLinks() {
       {socialLinks.map((link) => {
         const Icon = link.icon;
         return (
-          <Tooltip
-            title={link.name}
-            placement="top"
-            TransitionComponent={Fade}
-            TransitionProps={{ timeout: 600 }}
-          >
-            <a className="link" href={link.url} key={link.id} target="_blank">
-              <Icon />
-            </a>
-          </Tooltip>
+          <div key={link.id}>
+            <Tooltip
+              title={link.name}
+              placement="top"
+              TransitionComponent={Fade}
+              TransitionProps={{ timeout: 600 }}
+            >
+              <a className="link" href={link.url} target="_blank">
+                <Icon />
+              </a>
+            </Tooltip>
+          </div>
         );
       })}
     </div>

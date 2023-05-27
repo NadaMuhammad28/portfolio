@@ -13,7 +13,6 @@ const Stars = () => {
   const particlesLoaded = useCallback(async (container) => {
     setIsPEnding(false);
   }, []);
-  console.log(ispending);
   return (
     <Particles
       id="tsparticles"

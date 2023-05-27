@@ -13,18 +13,19 @@ export default function ContactForm() {
   const sendEmail = async () => {
     try {
       await emailjs.sendForm(
-        VITE_REACT_APP_EMAIL_SERVICE_ID,
-        VITE_REACT_APP_EMAIL_TEMPLATE_ID,
+        "service_h3gpw6w",
+        "template_y6aqqfr",
         form.current,
-        VITE_REACT_APP_EMAIL_PUBLIC_KEY
+        "w7tFDb1XK-QiWK6JA"
       );
     } catch (e) {
-      console.log(error.text);
+      console.log(e);
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(form);
     sendEmail();
     handleModal();
     setFieldState({
