@@ -1,33 +1,30 @@
-import { styled } from "@mui/system";
-import React from "react";
-import TitleSecondary from "../subComponents/TitleSecondary";
+import { styled } from '@mui/system';
+import React from 'react';
+import TitleSecondary from '../subComponents/TitleSecondary';
 export default function Fallback() {
   return (
-    <main className="main relative d-flex-col">
-      <TitleSecondary title="projects" />
-      <Wrapper className="section-p">
-        <div className="d-flex-col">
-          {new Array(3).fill(null).map((p, index) => {
-            return (
-              <article className=" p-fallback" key={index}>
-                <div className="p-img-container  img"></div>
-                <div className="p-content-fallback p-content">
-                  <h2 className="title"></h2>
-                  <div className="p-links-cntainer">
-                    <span className="link lin-holder"></span>
+    <Wrapper className='section-p'>
+      <div className='d-flex-col'>
+        {new Array(3).fill(null).map((p, index) => {
+          return (
+            <article className=' p-fallback' key={index}>
+              <div className='p-img-container  img'></div>
+              <div className='p-content-fallback p-content'>
+                <h2 className='title'></h2>
+                <div className='p-links-cntainer'>
+                  <span className='link lin-holder'></span>
 
-                    <span className="link"></span>
-                  </div>
+                  <span className='link'></span>
                 </div>
-              </article>
-            );
-          })}
-        </div>
-      </Wrapper>
-    </main>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </Wrapper>
   );
 }
-const Wrapper = styled("section")`
+const Wrapper = styled('section')`
   .p-fallback {
     width: 100%;
     display: flex;
@@ -41,7 +38,7 @@ const Wrapper = styled("section")`
   .img {
     align-self: center;
     animation: skeleton-loading 1s linear infinite alternate;
-    width: 22rem;
+    width: 30rem;
     height: 10rem;
   }
   .p-content-fallback {
